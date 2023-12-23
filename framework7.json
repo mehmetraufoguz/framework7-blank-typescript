@@ -1,0 +1,18 @@
+{
+  "cwd": "/Users/rauf/projects/framework7-blank-typescript",
+  "type": [
+    "web"
+  ],
+  "name": "Blank Typescript",
+  "framework": "react",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": "scss",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}

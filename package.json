@@ -1,0 +1,47 @@
+{
+  "name": "framework7-blank-typescript",
+  "version": "1.0.0",
+  "description": "Blank project of Framework7 written in Typescript",
+  "repository": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn dev",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build",
+    "postinstall": "cpy --flat ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && cpy --flat ./node_modules/material-icons/iconfont/*.* ./src/fonts/",
+    "prettier:format": "prettier --config .prettierrc 'src/**/*.ts*' --write",
+    "prettier:watch": "onchange 'src/**/*.ts*' -- prettier --write {{changed}}"
+  },
+  "browserslist": [
+    "IOS >= 15",
+    "Safari >= 15",
+    "last 5 Chrome versions",
+    "last 5 Firefox versions"
+  ],
+  "dependencies": {
+    "dom7": "^4.0.6",
+    "framework7": "^8.3.0",
+    "framework7-icons": "^5.0.5",
+    "framework7-react": "^8.3.0",
+    "material-icons": "^1.13.12",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "skeleton-elements": "^4.0.1",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "cpy-cli": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "onchange": "^7.1.0",
+    "postcss-preset-env": "^9.3.0",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  }
+}
