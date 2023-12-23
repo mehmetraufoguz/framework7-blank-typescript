@@ -1,35 +1,10 @@
 # Blank Typescript
 
-## Framework7 CLI Options
-
-Framework7 app created with following options:
-
-```
-{
-  "cwd": "/Users/rauf/projects/framework7-blank-typescript",
-  "type": [
-    "web"
-  ],
-  "name": "Blank Typescript",
-  "framework": "react",
-  "template": "blank",
-  "bundler": "vite",
-  "cssPreProcessor": "scss",
-  "theming": {
-    "customColor": false,
-    "color": "#007aff",
-    "darkMode": false,
-    "iconFonts": true
-  },
-  "customBuild": false
-}
-```
-
 ## Install Dependencies
 
 First of all we need to install dependencies, run in terminal
 ```
-npm install
+yarn install
 ```
 
 ## NPM Scripts
@@ -37,10 +12,10 @@ npm install
 * 🔥 `start` - run development server
 * 🔧 `dev` - run development server
 * 🔧 `build` - build web app for production
+* 🔧 `prettier:format` - formatting typescript files
+* 🔧 `prettier:watch` - auto formatting
 
-## Vite
 
-There is a [Vite](https://vitejs.dev) bundler setup. It compiles and bundles all "front-end" resources. You should work only with files located in `/src` folder. Vite config located in `vite.config.js`.
 ## Assets
 
 Assets (icons, splash screens) source images located in `assets-src` folder. To generate your own icons and splash screen images, you will need to replace all assets in this directory with your own images (pay attention to image size and format), and run the following command in the project directory:
